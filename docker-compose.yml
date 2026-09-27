@@ -1,0 +1,23 @@
+name: observa-cidadao
+
+services:
+  api:
+    build: https://github.com/Fernando11K/observa-cidadao-api.git#master
+    container_name: observa-cidadao-api
+    ports:
+      - "8000:8000"
+    volumes:
+      - dados-api:/app/data
+    restart: unless-stopped
+
+  front:
+    build: .
+    container_name: observa-cidadao-front
+    ports:
+      - "8080:80"
+    depends_on:
+      - api
+    restart: unless-stopped
+
+volumes:
+  dados-api:
