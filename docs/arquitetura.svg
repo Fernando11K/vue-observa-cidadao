@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1060 600" font-family="Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="seta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#37474F"/>
+    </marker>
+  </defs>
+
+  <rect width="1060" height="600" fill="#FFFFFF"/>
+  <text x="530" y="38" text-anchor="middle" font-size="24" font-weight="bold" fill="#1B3F8F">Observa Cidadão - Arquitetura</text>
+
+  <!-- docker compose -->
+  <rect x="200" y="140" width="600" height="420" rx="14" fill="#F5F7FA" stroke="#90A4AE" stroke-width="2" stroke-dasharray="8 6"/>
+  <text x="220" y="166" font-size="14" fill="#546E7A">docker compose (raiz do repositório do front)</text>
+
+  <!-- serviços externos -->
+  <rect x="830" y="60" width="210" height="500" rx="14" fill="#FFFDE7" stroke="#F7C800" stroke-width="2" stroke-dasharray="8 6"/>
+  <text x="935" y="86" text-anchor="middle" font-size="14" fill="#8D6E00">Serviços externos</text>
+  <text x="935" y="104" text-anchor="middle" font-size="12" fill="#8D6E00">(públicos, gratuitos, sem cadastro)</text>
+
+  <!-- usuário -->
+  <rect x="24" y="240" width="140" height="90" rx="12" fill="#ECEFF1" stroke="#607D8B" stroke-width="2"/>
+  <text x="94" y="278" text-anchor="middle" font-size="16" font-weight="bold" fill="#263238">Usuário</text>
+  <text x="94" y="300" text-anchor="middle" font-size="13" fill="#455A64">navegador</text>
+
+  <!-- front -->
+  <rect x="225" y="205" width="220" height="160" rx="12" fill="#E8F5E9" stroke="#009739" stroke-width="2.5"/>
+  <text x="335" y="234" text-anchor="middle" font-size="12" fill="#00702A">COMPONENTE PRINCIPAL</text>
+  <text x="335" y="258" text-anchor="middle" font-size="17" font-weight="bold" fill="#00702A">Front-end</text>
+  <text x="335" y="280" text-anchor="middle" font-size="13" fill="#263238">vue-observa-cidadao</text>
+  <text x="335" y="304" text-anchor="middle" font-size="13" fill="#263238">Vue 3 + Quasar + Pinia</text>
+  <text x="335" y="326" text-anchor="middle" font-size="13" fill="#263238">servido pelo Apache (httpd)</text>
+  <text x="335" y="348" text-anchor="middle" font-size="13" font-weight="bold" fill="#263238">localhost:8080</text>
+
+  <!-- api -->
+  <rect x="560" y="205" width="220" height="160" rx="12" fill="#E8EAF6" stroke="#1B3F8F" stroke-width="2.5"/>
+  <text x="670" y="234" text-anchor="middle" font-size="12" fill="#1B3F8F">API (BACK-END)</text>
+  <text x="670" y="258" text-anchor="middle" font-size="17" font-weight="bold" fill="#1B3F8F">API GraphQL</text>
+  <text x="670" y="280" text-anchor="middle" font-size="13" fill="#263238">observa-cidadao-api</text>
+  <text x="670" y="304" text-anchor="middle" font-size="13" fill="#263238">FastAPI + Strawberry</text>
+  <text x="670" y="326" text-anchor="middle" font-size="13" fill="#263238">JWT · cache de 12 h</text>
+  <text x="670" y="348" text-anchor="middle" font-size="13" font-weight="bold" fill="#263238">localhost:8000/graphql</text>
+
+  <!-- sqlite -->
+  <path d="M600 440 a70 14 0 0 1 140 0 v70 a70 14 0 0 1 -140 0 Z" fill="#ECEFF1" stroke="#607D8B" stroke-width="2"/>
+  <ellipse cx="670" cy="440" rx="70" ry="14" fill="#CFD8DC" stroke="#607D8B" stroke-width="2"/>
+  <text x="670" y="482" text-anchor="middle" font-size="16" font-weight="bold" fill="#263238">SQLite</text>
+  <text x="670" y="502" text-anchor="middle" font-size="12" fill="#455A64">usuários e acompanhamentos</text>
+  <text x="670" y="518" text-anchor="middle" font-size="12" fill="#455A64">(volume Docker)</text>
+
+  <!-- externos -->
+  <rect x="845" y="125" width="180" height="100" rx="10" fill="#FFFFFF" stroke="#C9A800" stroke-width="2"/>
+  <text x="935" y="155" text-anchor="middle" font-size="14" font-weight="bold" fill="#263238">Senado Federal</text>
+  <text x="935" y="175" text-anchor="middle" font-size="13" fill="#263238">Dados Abertos</text>
+  <text x="935" y="200" text-anchor="middle" font-size="12" fill="#455A64">senadores e mandatos</text>
+
+  <rect x="845" y="260" width="180" height="100" rx="10" fill="#FFFFFF" stroke="#C9A800" stroke-width="2"/>
+  <text x="935" y="290" text-anchor="middle" font-size="14" font-weight="bold" fill="#263238">TCU</text>
+  <text x="935" y="310" text-anchor="middle" font-size="13" fill="#263238">Pedidos do Congresso</text>
+  <text x="935" y="335" text-anchor="middle" font-size="12" fill="#455A64">solicitações ao TCU</text>
+
+  <rect x="845" y="395" width="180" height="100" rx="10" fill="#FFFFFF" stroke="#C9A800" stroke-width="2"/>
+  <text x="935" y="425" text-anchor="middle" font-size="14" font-weight="bold" fill="#263238">TCU</text>
+  <text x="935" y="445" text-anchor="middle" font-size="13" fill="#263238">Contas irregulares</text>
+  <text x="935" y="470" text-anchor="middle" font-size="12" fill="#455A64">responsáveis com contas</text>
+  <text x="935" y="485" text-anchor="middle" font-size="12" fill="#455A64">julgadas irregulares</text>
+
+  <!-- setas -->
+  <line x1="164" y1="285" x2="222" y2="285" stroke="#37474F" stroke-width="2" marker-end="url(#seta)"/>
+  <text x="193" y="274" text-anchor="middle" font-size="12" fill="#37474F">HTTP</text>
+
+  <line x1="445" y1="285" x2="557" y2="285" stroke="#37474F" stroke-width="2" marker-end="url(#seta)"/>
+  <text x="501" y="258" text-anchor="middle" font-size="12" font-weight="bold" fill="#37474F">GraphQL</text>
+  <text x="501" y="274" text-anchor="middle" font-size="11" fill="#37474F">queries: GET</text>
+  <text x="501" y="304" text-anchor="middle" font-size="11" fill="#37474F">mutations: POST</text>
+  <text x="501" y="319" text-anchor="middle" font-size="11" fill="#37474F">token JWT</text>
+
+  <line x1="670" y1="365" x2="670" y2="423" stroke="#37474F" stroke-width="2" marker-end="url(#seta)"/>
+  <text x="680" y="400" font-size="12" fill="#37474F">SQLAlchemy</text>
+
+  <line x1="780" y1="255" x2="842" y2="178" stroke="#37474F" stroke-width="2" marker-end="url(#seta)"/>
+  <text x="796" y="200" font-size="11" fill="#37474F">GET</text>
+  <line x1="780" y1="295" x2="842" y2="310" stroke="#37474F" stroke-width="2" marker-end="url(#seta)"/>
+  <text x="798" y="292" font-size="11" fill="#37474F">GET</text>
+  <line x1="780" y1="335" x2="842" y2="440" stroke="#37474F" stroke-width="2" marker-end="url(#seta)"/>
+  <text x="784" y="390" font-size="11" fill="#37474F">POST</text>
+</svg>
