@@ -5,11 +5,7 @@
  * for the /quasar.config file itself.
  *
  * https://quasar.dev/quasar-cli-vite/handling-import-meta-env#type-inference
- *
- * @example
- * interface ImportMetaEnv {
- *   readonly MY_VAR: string;
- *   readonly MY_OTHER_VAR: string;
- * }
  */
-interface ImportMetaEnv {}
+interface ImportMetaEnv {
+  readonly QCLI_API_URL?: string;
+}
